@@ -1,0 +1,81 @@
+body{
+    align-items: center;
+    display: grid;
+    /* justify-content: center; */
+}
+
+h1{
+    text-align: center;
+}
+/* div{
+    border: 2px solid black;
+    border-radius: 10px;
+} */
+
+header, footer{
+    /* padding: 5px; */
+    border: 2px solid rgba(90, 68, 107, 0.693);
+    background-color: rgba(90, 68, 107, 0.693);
+}
+
+nav{
+    border: 2px solid black;
+    border-radius: 5px;
+    /* padding: 5px;  */
+}
+
+#navlist{
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover::after {
+    color: red;
+}
+
+.form1, .calculate, .instruction, .speaks{
+    background-color: rgb(222, 235, 247);
+    width: fit-content;
+    border: 2px solid;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    background-color: rgb(167, 188, 209);
+    /* width: fit-content; */
+    border: 2px solid;
+    border-radius: 20px;
+    /* justify-content: center; */
+    padding: 20px;
+    margin: auto;
+}
+
+input, select, textarea{
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.col-sm-6{
+    padding: 5px;
+}
+
+.row{
+    padding: 50px;
+}
+
+/* #calculate{
+    padding: 1000px;
+    align-items: center;
+} */
