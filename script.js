@@ -45,29 +45,32 @@ function calculateMark()
     let percent = (totalMark/3).toFixed(2);
     let result;
 
-    if (mark1 == "" || mark2 == "" || mark3 == ""){
+    if (mark1 && mark2 && mark3){
+        if (percent >= 80)
+        {
+            result = "1st Division";
+        }
+        
+        else if(percent >= 60 & percent < 80){
+        result = "2nd Division";
+        }
+    
+        else if(percent >=40 & percent < 60)
+        {
+            result = "3rd Division";
+        }
+
+        else
+        {
+            result = "Fail";
+        }
+        document.getElementById("showResult").innerHTML= "Total Mark: "+totalMark +" out of 300.<br>Percentage: " + percent + " % <br>Result: " + result;
+    }
+
+    else{
         alert("Please, Enter the value.");
     }
-    if (percent >= 80)
-    {
-        result = "1st Division";
-    }
-
-    else if(percent >= 60 & percent < 80){
-        result = "2nd Division";
-    }
-
-    else if(percent >=40 & percent < 60)
-    {
-        result = "3rd Division";
-    }
-
-    else
-    {
-        result = "Fail";
-    }
-
-    document.getElementById("showResult").innerHTML= "Total Mark: "+totalMark +" out of 300.<br>Percentage: " + percent + " % <br>Result: " + result;
+    
 }
 
 function empsalary()

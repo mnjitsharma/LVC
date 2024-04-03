@@ -12,10 +12,19 @@ h1{
     border-radius: 10px;
 } */
 
-header, footer{
+header{
     /* padding: 5px; */
     border: 2px solid rgba(90, 68, 107, 0.693);
     background-color: rgba(90, 68, 107, 0.693);
+    border-radius: 8px 8px 0px 0px;
+}
+
+footer{
+    border: 2px solid rgba(90, 68, 107, 0.693);
+    background-color: rgba(90, 68, 107, 0.693);
+    /* height: 100%; */
+    border-radius: 8px;
+    padding: 50px;
 }
 
 nav{
